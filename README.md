@@ -17,8 +17,8 @@ Each requirement has a point value. A fully complete requirement gets full point
 
 General Requirements
 
-[ ] 10: Solution is in a public GitHub repository called phase-2-challenge.
-[ ] 10: Solution repository has 4 folders: part-1, part-2, and part-3, and part-4.
+[x] 10: Solution is in a public GitHub repository called phase-2-challenge.
+[x] 10: Solution repository has 4 folders: part-1, part-2, and part-3, and part-4.
 [ ] 20: Git history shows frequent commits.
 
 Part 1: Write tests and solutions for these functions
