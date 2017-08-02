@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Phase 2 Challenge - Clients</title>
+      <style>
+        h1{text-aling:center;}
+        h4{margin:0;padding:5px;background:lightskyblue;}
+        li{list-style:none;padding-left:5px;}
+        #container{width:600px; margin:auto; overflow:hidden;}
+      </style>
+          
+  </head>
+
+  <body>
+    <ul>
+      <h1>Client Companies</h1>
+      <script>
+        for(i =0; i < clients.length;i++){ 
+        // 'i' is index for iteration. length is a property of the array that indicates the number of objects in the array.'i++' increments the iteration by 1.
+          document.write('<h4>' + clients[i].id + '</h4>');
+          document.write('<li>' + clients[i].company + '</li>');
+          document.write('<li>' + clients[i].phone + '</li>');
+       // document.write('<li>' + clients[i].rep_name'</li>';
+        } 
+      </script>
+    </ul>
+  </body>
+</html>
