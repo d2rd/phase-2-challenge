@@ -1,0 +1,26 @@
+{
+  "name": "phase-2-challenge",
+  "version": "1.0.0",
+  "description": "phase-2 interview challenge answers",
+  "main": "app.js",
+  "directories": {
+    "test": "../part-1/test"
+  },
+  "scripts": {
+    "test": "mocha || true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/d2rd/phase-2-challenge.git"
+  },
+  "author": "Glenn-David Daniel",
+  "license": "MIT",
+   "devDependencies": {
+    "chai": "^4.1.0",
+    "mocha": "^3.5.0"
+  },
+  "bugs": {
+    "url": "https://github.com/d2rd/phase-2-challenge/issues"
+  },
+  "homepage": "https://github.com/d2rd/phase-2-challenge#readme"
+}
