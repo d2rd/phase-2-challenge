@@ -1,6 +1,6 @@
 var http = require('http');
 var fs = require('fs');
-var clients = fs.readFileSync('./part-2/clients.json', 'utf8');  //reads the clients.json file
+var clients = fs.readFileSync('/Users/d2rd/lgProjects/phase-2-challenge/part-1/part-2/clients.json', 'utf8');  //reads the clients.json file
 
 var server = http.createServer(function(req, res){
   console.log('request was made: ' + req.url);
