@@ -5,22 +5,27 @@
 
 // 1. Get required resources
         var fs = require('fs');  //requires the node 'fs' library.
-        const targetCompanyNameProcess = [process.argv[2]]  //search parameter is the 3rd array item
+        var targetCompanyNameProcess = [process.argv[2]]  //search parameter is the 3rd array item
+// 2.  
+        const clients = fs.readFileSync('./clients.json', 'utf8');  //loads the clients.json file into the var 'clients' (using absolute path).
+
+console.log(clients);  // checks array is stored in clients
 console.log(targetCompanyNameProcess);  // checks if value is stored by process.argv
 
-// 2.  Read in json data to variable
-        const clients = fs.readFileSync('./clients.json', 'utf8');  //loads the clients.json file into the var 'clients' (using absolute path).
-// THIS WORKS!   console.log(clients);  // checks array is stored in clients
-
 function byCompanyName(targetCompanyName){
-    return clientsFound;
+    return targetCompanyName;
 }
 
-const clientsFound = function () {
-    clients.filter(byCompanyName) // creates new array containing only array elements that match 'targetCompanyName'.
-}
+var clientsFound = clients.filter(byCompanyName) // creates new array containing only array elements that match 'targetCompanyName'.
+
 console.log(clientsFound);
 
-// company();
+// searchByCompany();
 
-// module.exports = company.js;
+// module.exports = searchByCompany.js;
+
+clientsFound.id
+clientsFound.rep_name
+clientsFound.company
+clientsFound.city
+clientsFound.state
