@@ -12,8 +12,8 @@
 console.log(clients);  // checks array is stored in clients
 console.log(targetCompanyNameProcess);  // checks if value is stored by process.argv
 
-function byCompanyName(targetCompanyName){
-    return targetCompanyName;
+function byCompanyName(targetCompanyName){   //helper function
+    return targetCompanyName === clients.company;
 }
 
 var clientsFound = clients.filter(byCompanyName) // creates new array containing only array elements that match 'targetCompanyName'.
@@ -29,3 +29,9 @@ clientsFound.rep_name
 clientsFound.company
 clientsFound.city
 clientsFound.state
+
+searchByCompany (targetCompanyName){
+        return clients.company === targetCompanyName
+}
+
+filterByMatchingCompany(clients, targetCompanyName)
