@@ -23,7 +23,7 @@ console.log(clientsFound); // print all the values of clientsFound
 for (i in clientsFound){
     console.log(i);
     for (key in clientsFound[i]){
-      if(key !== 'no_employees' && key !== 'phone' && key !== 'created_at') {
+      if(key !== 'no_employees' && key !== 'phone' && key !== 'created_at') { // filters out unwanted keys.  NOTE: Must use '&&'!  '||' ("OR" operator) does not work in JS 'if'.  This is NOT SQL.
         console.log( key + ": " + clientsFound[i][key]);
       }
        
