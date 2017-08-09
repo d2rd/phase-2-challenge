@@ -17,4 +17,13 @@ function byCompany(clientObj, index, clientData) {
      }}
 
 var clientsFound = clientData.filter(byCompany);
+// console.log(JSON.parse(clientsFound,));
 console.log(clientsFound);
+// print all the values of clientsFound
+
+for (i in clientsFound){
+    console.log(i);
+    for (key in clientsFound[i]){
+        console.log( key + ": " + clientsFound[i][key]);
+    }
+}
