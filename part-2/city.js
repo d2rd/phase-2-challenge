@@ -6,8 +6,8 @@
 
 // 1. Get required resources
         var fs = require('fs');  //requires the node 'fs' library.
-        var clients = fs.readFileSync('./clients.json', 'utf8');  //loads the clients.json file into the var 'clients' (using absolute path).
-        var targetCityNameProcess = [process.argv[2]]  //search parameter is the 3rd array item
+        var clients = fs.readFileSync('./clients.json', 'utf8');  //loads, AS A STRING, the clients.json file into the var 'clients' (using absolute path).
+        var targetCityNameProcess = process.argv[2]  //search parameter is the 3rd array item
 // 2.  
 console.log(targetCityNameProcess);  // checks value is stored by process.argv
 function byCityName(targetCityName){

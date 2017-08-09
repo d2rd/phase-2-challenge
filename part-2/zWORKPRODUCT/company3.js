@@ -18,24 +18,12 @@ function byCompany(clientObj, index, clientData) {
 
 var clientsFound = clientData.filter(byCompany);
 // console.log(JSON.parse(clientsFound,));
-console.log(clientsFound); // print all the values of clientsFound
+console.log(clientsFound);
+// print all the values of clientsFound
 
 for (i in clientsFound){
     console.log(i);
     for (key in clientsFound[i]){
-      if(key !== 'no_employees' && key !== 'phone' && key !== 'created_at') { // filters out unwanted keys.  NOTE: Must use '&&'!  '||' ("OR" operator) does not work in JS 'if'.  This is NOT SQL.
         console.log( key + ": " + clientsFound[i][key]);
-      }
-       
-        
     }
 }
-
-// Return these values
-        // clientsFound.id
-        // clientsFound.rep_name
-        // clientsFound.company
-        // clientsFound.city
-        // clientsFound.state
-
-        
