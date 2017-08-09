@@ -2,6 +2,7 @@
 
 // Your searches should not be case-sensitive: i.e. a search for "Boston" is the same as a search for "boston".
 
+<<<<<<< HEAD
 //Pseudo.
 
 // 1. Get required resources
@@ -31,3 +32,14 @@ function byCityName(targetCityName){
 console.log(byCityName());
 
 module.exports.byCityName = byCityName;
+=======
+for(i =0; i < clients.length;i++){ 
+        // 'i' is index for iteration. length is a property of the array that indicates the number of objects in the array.'i++' increments the iteration by 1.
+          document.write('<h4>' + clients[i].id + '</h4>');
+          document.write('<li>' + clients[i].rep_name + '</li>');
+          document.write('<li>' + clients[i].company + '</li>');
+          document.write('<li>' + clients[i].city + '</li>');
+          document.write('<li>' + clients[i].state + '</li>');
+        } 
+        
+>>>>>>> cecaf6688ac221c31f77822eb5a977f10d1fc890
