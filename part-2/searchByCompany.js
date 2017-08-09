@@ -4,7 +4,6 @@ var clientData = require('./clients')
 var targetCompany = process.argv[2] //search parameter is the 3rd array item.
 console.log(targetCompany);
 
-<<<<<<< HEAD
 // 2. load the clients.json file into the var 'clientData' (using absolute path).
 // const clientData = JSON.parse(fs.readFileSync('./clients.json', 'utf8')); //
 
@@ -31,15 +30,6 @@ for (i in clientsFound){
         
     }
 }
-=======
-for(i =0; i < clients.length;i++){ 
-        // 'i' is index for iteration. length is a property of the array that indicates the number of objects in the array.'i++' increments the iteration by 1.
-          document.write('<h4>' + clients[i].id + '</h4>');
-          document.write('<li>' + clients[i].company + '</li>');
-          document.write('<li>' + clients[i].phone + '</li>');
-       // document.write('<li>' + clients[i].rep_name'</li>';
-        } 
->>>>>>> cecaf6688ac221c31f77822eb5a977f10d1fc890
 
 // Return these values
         // clientsFound.id
