@@ -17,5 +17,5 @@ var json = '{"glossary":{"title":"example glossary","GlossDiv":{"title":"S","Glo
 var js = JSON.parse(json);
 
 //example of grabbing values from any key passed in JSON
-console.log(getValues(js,'ID'));
+console.log(getValues(js,'ID',));
 //returns array ["SGML", "44"] 
