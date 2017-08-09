@@ -5,33 +5,36 @@
 
 // 1. Get required resources
         var fs = require('fs');  //requires the node 'fs' library.
-        var targetCompanyNameProcess = [process.argv[2]]  //search parameter is the 3rd array item
+        var targetCompany = [process.argv[2]]  //search parameter is the 3rd array item
 // 2.  
         const clients = fs.readFileSync('./clients.json', 'utf8');  //loads the clients.json file into the var 'clients' (using absolute path).
 
-console.log(clients);  // checks array is stored in clients
-console.log(targetCompanyNameProcess);  // checks if value is stored by process.argv
+// console.log(clients);  // checks array is stored in clients
+// console.log(targetCompany);  // checks if value is stored by process.argv
 
-function byCompanyName(targetCompanyName){   //helper function
-    return targetCompanyName === clients.company;
+//helper function
+function byCompanyName(client, string){  
+    if(client.company == string) {
+    return client.rep_name;
+    }    
 }
+ // calls the function with the data wanted.
 
-var clientsFound = clients.filter(byCompanyName) // creates new array containing only array elements that match 'targetCompanyName'.
-
-console.log(clientsFound);
+var clientsFound = clients.filter(byCompanyName) // creates new array containing only array elements that match 'targetCompany'.
+console.log(byCompanyName(clients, targetCompany));
 
 // searchByCompany();
 
 // module.exports = searchByCompany.js;
+// Return these values
+        // clientsFound.id
+        // clientsFound.rep_name
+        // clientsFound.company
+        // clientsFound.city
+        // clientsFound.state
 
-clientsFound.id
-clientsFound.rep_name
-clientsFound.company
-clientsFound.city
-clientsFound.state
+// searchByCompany (targetCompany){
+//         return clients.company === targetCompany
+// }
 
-searchByCompany (targetCompanyName){
-        return clients.company === targetCompanyName
-}
-
-filterByMatchingCompany(clients, targetCompanyName)
+// filterByMatchingCompany(clients, targetCompany)
