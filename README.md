@@ -19,7 +19,7 @@ General Requirements
 
 [x] 10: Solution is in a public GitHub repository called phase-2-challenge.
 [x] 10: Solution repository has 4 folders: part-1, part-2, and part-3, and part-4.
-[ ] 20: Git history shows frequent commits.
+[x] 20: Git history shows frequent commits.
 
 Part 1: Write tests and solutions for these functions
 
@@ -172,8 +172,8 @@ Finding clients in City "Boston"...
 
 Requirements
 
-[ ] 40: searchByCompany.js script prints the client  id, phone, and company for all clients whose company starts with the provided company argument.
-[ ] 40: searchByCity.js script prints the client id, rep_name, company, city, and state that for all clients whose city matches the provided city argument.
+[x] 40: searchByCompany.js script prints the client  id, phone, and company for all clients whose company starts with the provided company argument.
+[x] 40: searchByCity.js script prints the client id, rep_name, company, city, and state that for all clients whose city matches the provided city argument.
 
 Part 3: HTML layout for Filmtube
 
