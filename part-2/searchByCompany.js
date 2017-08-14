@@ -21,28 +21,54 @@ console.log(targetCompany);
         }
         else {
             return false;
-        }}
+        }
+    }
 
-var clientsFound = clientData.filter(byCompany); // runs filter method against new array 'clientsFound' containing matches output by 'byCompany' helper function.
+var clientsFound = clientData.filter(byCompany); // NOTE: byCompany IS the callback.  runs filter method against new array 'clientsFound' containing matches output by 'byCompany' helper function.
 // console.log(JSON.parse(clientsFound,));  // converts JSON string to object.
 // console.log(clientsFound); // print all the values of clientsFound
+
+//Below code daisy chains keys.  Not the best design
+// for (i in clientsFound){
+//     console.log(i);
+//     for (key in clientsFound[i]){
+//       if(key !== 'rep_name' && key !== 'no_employees' && key !== 'city' && key !== 'state' && key !== 'created_at') { // filters out unwanted keys.  NOTE: Must use '&&'!  '||' ("OR" operator) does not work in JS 'if'.  This is NOT SQL.
+//         console.log( key + ": " + clientsFound[i][key]);
+//       }        
+//     }
+// }
+//refactor replace daisy chained keys with array of excluded keys 
+    //make an exclude list, i.e. an array of unwanted values ('badKeys')
+    //check key against badKeys
+    //if badKeys.indexOf(i) == -1 means 'i' is not a value in the array   //returns -1 if not in array.  any other result is in the array (0-n where 'n' = 'array.length -1')
 
 for (i in clientsFound){
     console.log(i);
     for (key in clientsFound[i]){
-      if(key !== 'rep_name' && key !== 'no_employees' && key !== 'city' && key !== 'state' && key !== 'created_at') { // filters out unwanted keys.  NOTE: Must use '&&'!  '||' ("OR" operator) does not work in JS 'if'.  This is NOT SQL.
+     var badKeys = [
+                    'rep_name',
+                    'no_employees', 
+                    'city',
+                    'state',
+                    'created_at'
+                    ]
+    if (badKeys.indexOf(key) == -1){
         console.log( key + ": " + clientsFound[i][key]);
+    }
       }        
     }
-}
 
 // Include these values:
         // clientsFound.id
         // clientsFound.company
         // clientsFound.phone
         
-// Exclude these values:
-        // clientsFound.
-
+// // Exclude these values on these keys:
+//         // clientsFound.
+//         'rep_name'
+//         'no_employees' 
+//         'city'
+//         'state'
+//         'created_at')
         // clientsFound.city
         // clientsFound.state        

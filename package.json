@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/d2rd/phase-2-challenge/issues"
   },
-  "homepage": "https://github.com/d2rd/phase-2-challenge#readme"
+  "homepage": "https://github.com/d2rd/phase-2-challenge#readme",
+  "devDependencies": {
+    "chai": "^4.1.1"
+  }
 }
