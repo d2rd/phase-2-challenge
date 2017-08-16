@@ -79,7 +79,7 @@ Q13: Lets say you have the following file structure
 
   And you were in the linkedin-for-dancers folder. What command would you use to copy the README.md file to the pinterest-for-dogs folder?
 
-  A: To move README.md file to the target folder I would use ' cp README.md ../pinterest-for-dogs'.
+  A: To copy README.md file to the target folder I would use ' cp README.md ../pinterest-for-dogs'.
 
 Q14: What keyboard shortcut do you use, in your editor, to go to a file in the project you have open?
 

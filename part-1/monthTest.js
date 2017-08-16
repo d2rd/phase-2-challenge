@@ -1,9 +1,9 @@
 // Test using expected/valid inputs for the month() function.
 var assert = require('chai').assert; // brings in chai's assertion library.
-var showMonth = require('../app.showMonth');
+var showMonth = require('./showMonth');
 
-describe('app.showMonth', function(){
-  it('app.showMonth should return correct month for given date', function(){
+describe('showMonth', function(){
+  it('showMonth should return correct month for given date', function(){
     assert.equal(app.showMonth()) // invokes the 'equal' method
   });
 });

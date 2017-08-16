@@ -11,7 +11,7 @@
 // filterBetween(arr, 'deer', 'giraffe') // => ['dog']
 // filterBetween(arr, 'chimp', 'lobster') // => ['dog', 'lion', 'cow']
 // filterBetween(arr, 'chickadee', 'chimpanzee') // => []
-
+NOTE TRY ARRAY.SORT()
 // Requirements
 
 // [ ] 10: A test using expected/valid inputs for the filterBetween() function is written in tests.js.

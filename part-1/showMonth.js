@@ -31,21 +31,27 @@ var calendar = [
 
 
 function month(dateInput){
-  var dateInput = prompt("Please enter a date","mm/dd/yyyy");
+  // var dateInput = prompt("Please enter a date","mm/dd/yyyy");
+  var dateInput = process.argv[2];
   console.log(dateInput);
 
-  //extract month digits from date/Input.
-  //hint use regular expression.
+  //split dateInput into array.
+    dateInputArray = dateInput.split("/");
+    console.log(dateInputArray);
+  //extract month digits from dateInput
 
-  //match dateInput to monthNumber.
-  function byCompany(clientObj, index, clientData) { 
-    // console.log(clientObj);   
-  if (clientObj.company == targetCompany) {
-        return true;
-    }
-    else {
-        return false;
-    }}
+  var getMonth = function (dateInputArray) { 
+    if (dateInputArray[0] >= 1 || dateInputArray[0] <= 12) {
+    console.log('the month is ' + getMonth);
+          return console.log('this is a valid month');
+      }
+      else {
+          return false;
+      }};
+};
+
+//match dateInput to monthNumber.
+  
   // for (i in calendar){
   //     console.log(i);
   //     for (key in calendar[i]){
@@ -56,9 +62,8 @@ function month(dateInput){
   //     }
   // }
 
-}
-
 month();
+// getMonth();
 // let dateInput = new Date(2017, 6, 19) // June 19, 2017
 // month(dateInput) // returns "June"
 
